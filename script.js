@@ -188,15 +188,15 @@ function handlePalindromeClick(){
         var getPalindrome = checkAllPalindromes(prepareDate);
 
         if(getPalindrome){
-            output.innerText = "YOUR BDAY IS PALINDROMEEE"
+            output.innerText = "🥳 Your birthday is a Palindrome date! 🥳"
         } else {
             var [nextCount, nextDate] = getNextPalindromeDate(prepareDate);
             var [prevCount, prevDate] = getPrevPalindromeDate(prepareDate);
 
             if(prevCount > nextCount){
-                output.innerText = `The next date is in ${nextCount} days and is on ${nextDate.day}/${nextDate.month}/${nextDate.year}`
+                output.innerText = `Patience grasshopper, for the next Palindrome date is in ${nextCount} day(s) on this special date: ${nextDate.day}/${nextDate.month}/${nextDate.year}`
             } else{
-                output.innerText = `The previous date was ${prevCount} days ago and was on ${prevDate.day}/${prevDate.month}/${prevDate.year}`
+                output.innerText = `Oh noo! You missed it by ${prevCount} day(s) on this date: ${prevDate.day}/${prevDate.month}/${prevDate.year}`
             }
         }
     } else {
@@ -204,26 +204,4 @@ function handlePalindromeClick(){
     }
 }
 
-var date1 = {
-    day: 2,
-    month: 2,
-    year: 2020
-}
-var date2 = {
-    day: 15,
-    month: 8,
-    year: 2020
-}
-var date3 = {
-    day: 31,
-    month: 12,
-    year: 2020
-}
-
 submitBday.addEventListener("click", handlePalindromeClick);
-
-// function getDate(){
-//     var bday = userBday.value;
-//     var result = checkPalindrome(bday);
-//     console.log(result)
-// }
