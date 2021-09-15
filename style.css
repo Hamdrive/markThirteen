@@ -10,19 +10,19 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(4, 109, 179, 0.329);
     display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     height: 100vh;
+
 }
 
 .title{
     font-size: 4rem;
     font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
+    margin-bottom: auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(4, 109, 179, 0.329);
+
 }
 
 .bday, .output, .check{
@@ -32,6 +32,7 @@ body{
     align-items: center;
     font-size: 2rem;
     font-weight: 500;
+    flex: 1;
 }
 
 input{
@@ -49,6 +50,12 @@ input{
     text-align: center;
 }
 
+.check{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+}
+
 button {
     border-radius: 20px;
     color: #ffffff;
@@ -63,4 +70,40 @@ button:hover {
     background: rgb(3, 91, 150);
     text-decoration: none;
     cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.icons i{
+    margin: 0 2rem;
+    color: black;
+}
+
+.icons i:hover{
+    color: rgb(1, 69, 114);
+}
+
+.bottom-container{
+    background-color: rgba(4, 109, 179, 0.329);
+    height: 100px;
+    width: 100%;
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+.footer-link{
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.copyright{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.5rem;
 }
